@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: Saint-Malo Natation
 
 # import hextra as module
 module:
@@ -18,39 +18,44 @@ markup:
 
 menu:
   main:
-    - name: Doc
-      pageRef: /docs
+    - name: Accueil
+      pageRef: /
       weight: 1
-    - name: About
-      pageRef: /about
+    - name: Apprentissage
+      pageRef: /docs
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
+    - name: À Propos
+      pageRef: /about
       weight: 3
-    - name: Search
+    - name: Contact
+      url: "#contact"
       weight: 4
-      params:
-        type: search
-    - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
-      params:
-        icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
+  description: "Saint-Malo Natation - École de natation"
+  
   navbar:
     displayTitle: true
     displayLogo: false
+    width: wide
+
+  page:
+    width: wide
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    displayCopyright: true
+    displayPoweredBy: false
+
+  theme:
+    default: light
+    displayToggle: false
 
   editURL:
-    enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    enable: false
+
+  search:
+    enable: false
+
+  # Custom CSS
+  customCSS:
+    - css/custom.css

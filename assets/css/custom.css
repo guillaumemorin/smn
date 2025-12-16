@@ -1,0 +1,294 @@
+/* Saint-Malo Natation Custom Theme */
+/* Primary navy blue: #0A2540 */
+/* Light blue accent: #4A90E2 */
+
+:root {
+  --navy-blue: #0A2540;
+  --light-blue: #4A90E2;
+  --lighter-blue: #6BA3E8;
+  --card-bg: #ffffff;
+  --text-on-blue: #ffffff;
+}
+
+/* Override Hextra CSS variables */
+:root {
+  --primary-hue: 210;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+}
+
+.dark {
+  --primary-hue: 210;
+}
+
+/* Header and Navbar - Navy Blue */
+.hextra-navbar,
+header,
+nav,
+.navbar,
+nav.nav,
+header.nav {
+  background-color: var(--navy-blue) !important;
+  border-bottom: 2px solid var(--light-blue);
+}
+
+/* Force navbar background in all states */
+body nav,
+body header,
+.nextra-nav-container,
+.nextra-navbar,
+.hextra-navbar-content {
+  background-color: var(--navy-blue) !important;
+}
+
+.hextra-navbar .nav-link,
+.hextra-navbar a,
+header a,
+nav a,
+.navbar a {
+  color: var(--text-on-blue) !important;
+  font-weight: 500;
+}
+
+.hextra-navbar .nav-link:hover,
+.hextra-navbar a:hover,
+nav a:hover {
+  color: var(--light-blue) !important;
+}
+
+/* Main title/logo - bold white on navy */
+.hextra-navbar .title,
+.hextra-navbar h1,
+header h1,
+header .title {
+  color: var(--text-on-blue) !important;
+  font-weight: 700 !important;
+}
+
+/* Hero section - centered with navy background */
+.hero,
+.hextra-hero,
+div.hero {
+  background: linear-gradient(135deg, var(--navy-blue) 0%, #1a3a5f 100%);
+  color: var(--text-on-blue);
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 0 0 3rem 0;
+  border-radius: 0;
+}
+
+.hero h1,
+.hextra-hero h1,
+div.hero h1 {
+  color: var(--text-on-blue) !important;
+  font-weight: 700 !important;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p,
+.hextra-hero p,
+div.hero p {
+  color: var(--text-on-blue) !important;
+  font-size: 1.25rem;
+  opacity: 0.95;
+}
+
+/* Cards styling - clean and modern */
+.hextra-cards,
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1200px;
+}
+
+.hextra-card,
+.card {
+  background: var(--card-bg);
+  border: 2px solid var(--light-blue);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+  transition: all 0.3s ease;
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.hextra-card:hover,
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(10, 37, 64, 0.25);
+  border-color: var(--navy-blue);
+}
+
+.hextra-card h3,
+.card h3,
+.hextra-card .title,
+.card .title {
+  color: var(--navy-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hextra-card p,
+.card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.hextra-card a,
+.card a {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hextra-card a:hover,
+.card a:hover {
+  color: var(--navy-blue);
+  text-decoration: underline;
+}
+
+/* Buttons and CTAs - blue theme */
+.btn,
+button,
+.hextra-button,
+a.button {
+  background-color: var(--light-blue);
+  color: var(--text-on-blue);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover,
+button:hover,
+.hextra-button:hover,
+a.button:hover {
+  background-color: var(--navy-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(10, 37, 64, 0.3);
+}
+
+/* Section headings - navy blue, centered */
+h2 {
+  color: var(--navy-blue);
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 3rem 0 2rem;
+}
+
+h3 {
+  color: var(--navy-blue);
+  font-weight: 600;
+}
+
+/* Links - light blue accent */
+a {
+  color: var(--light-blue);
+}
+
+a:hover {
+  color: var(--navy-blue);
+}
+
+/* Footer - navy blue */
+footer,
+.hextra-footer {
+  background-color: var(--navy-blue);
+  color: var(--text-on-blue);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+footer a,
+.hextra-footer a {
+  color: var(--light-blue);
+}
+
+footer a:hover,
+.hextra-footer a:hover {
+  color: var(--lighter-blue);
+}
+
+/* Centered content layout */
+.content,
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero h1,
+  .hextra-hero h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .hextra-cards,
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hextra-card,
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* Dark mode overrides to maintain navy theme */
+@media (prefers-color-scheme: dark) {
+  .hextra-navbar,
+  header,
+  nav {
+    background-color: var(--navy-blue) !important;
+  }
+  
+  footer,
+  .hextra-footer {
+    background-color: var(--navy-blue) !important;
+  }
+}
+
+/* Specific Hextra theme overrides */
+.hextra-navbar-content {
+  background-color: var(--navy-blue) !important;
+}
+
+.dark .hextra-navbar,
+.dark header,
+.dark nav {
+  background-color: var(--navy-blue) !important;
+}
+
+/* Search bar styling */
+.search-input,
+input[type="search"] {
+  border: 2px solid var(--light-blue);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.search-input:focus,
+input[type="search"]:focus {
+  border-color: var(--navy-blue);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}

@@ -5,3 +5,8 @@ resources/
 
 # Editor
 .vscode/
+
+# Build artifacts
+hugo_*.tar.gz
+public/
+resources/
