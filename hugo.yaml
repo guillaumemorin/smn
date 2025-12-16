@@ -55,7 +55,3 @@ params:
 
   search:
     enable: false
-
-  # Custom CSS
-  customCSS:
-    - css/custom.css

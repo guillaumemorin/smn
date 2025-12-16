@@ -8,10 +8,7 @@
   --lighter-blue: #6BA3E8;
   --card-bg: #ffffff;
   --text-on-blue: #ffffff;
-}
-
-/* Override Hextra CSS variables */
-:root {
+  /* Override Hextra CSS variables */
   --primary-hue: 210;
   --gray-100: #f8f9fa;
   --gray-200: #e9ecef;
@@ -250,20 +247,6 @@ main {
   .hextra-card,
   .card {
     max-width: 100%;
-  }
-}
-
-/* Dark mode overrides to maintain navy theme */
-@media (prefers-color-scheme: dark) {
-  .hextra-navbar,
-  header,
-  nav {
-    background-color: var(--navy-blue) !important;
-  }
-  
-  footer,
-  .hextra-footer {
-    background-color: var(--navy-blue) !important;
   }
 }
 
