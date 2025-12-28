@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: hibi.is Documentation
 
 # import hextra as module
 module:
@@ -18,39 +18,41 @@ markup:
 
 menu:
   main:
-    - name: Doc
+    - name: Documentation
       pageRef: /docs
       weight: 1
+    - name: Use Cases
+      pageRef: /use-cases
+      weight: 2
+    - name: API Reference
+      pageRef: /api
+      weight: 3
+    - name: FAQ
+      pageRef: /faq
+      weight: 4
     - name: About
       pageRef: /about
-      weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
-      weight: 3
+      weight: 5
     - name: Search
-      weight: 4
+      weight: 6
       params:
         type: search
     - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      weight: 7
+      url: "https://github.com/guillaumemorin/hibi"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
+  description: "Complete documentation for hibi.is - your comprehensive guide to all features and use cases"
   navbar:
     displayTitle: true
     displayLogo: false
 
   footer:
-    displayCopyright: false
+    displayCopyright: true
     displayPoweredBy: true
 
   editURL:
     enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    base: "https://github.com/guillaumemorin/smn/edit/main/content"
