@@ -11,7 +11,7 @@ Welcome! This guide will help you get up and running with hibi.is in just a few 
 
 ## What is hibi.is?
 
-hibi.is is a web service that provides [describe main functionality here]. It's designed to be simple, fast, and reliable.
+hibi.is is a powerful web service for creating, storing, and sharing content online. Whether you need to share code snippets, create short links, publish documentation, or collaborate with your team, hibi.is provides a fast, simple, and reliable platform to get things done.
 
 ## Quick Start
 
